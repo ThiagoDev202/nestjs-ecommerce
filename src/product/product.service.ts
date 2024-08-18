@@ -5,7 +5,6 @@ import { Product, ProductDocument } from './schemas/product.schema';
 import { CreateProductDTO } from './dtos/create-product.dto';
 import { FilterProductDTO } from './dtos/filter-product.dto';
 
-
 @Injectable()
 export class ProductService {
   constructor(@InjectModel('Product') private readonly productModel: Model<ProductDocument>) { }
