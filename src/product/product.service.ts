@@ -49,7 +49,7 @@ export class ProductService {
   }
 
   async deleteProduct(id: string): Promise<any> {
-    const deletedProduct = await this.productModel.findByIdAndRemove(id);
+    const deletedProduct = await this.productModel.findByIdAndDelete(id);
     return deletedProduct;
   }
 }
